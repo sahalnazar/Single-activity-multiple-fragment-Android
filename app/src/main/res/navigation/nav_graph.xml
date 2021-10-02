@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_main"
+        android:id="@+id/mainFragment"
+        android:name="io.github.sahalnazar.activitiestofragments.fragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_anotherFragment"
+            app:destination="@id/anotherFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_another"
+        android:id="@+id/anotherFragment"
+        android:name="io.github.sahalnazar.activitiestofragments.fragment.AnotherFragment"
+        android:label="AnotherFragment" >
+        <argument
+            android:name="argString"
+            app:argType="string" />
+        <argument
+            android:name="argInt"
+            app:argType="integer" />
+        <argument
+            android:name="argBool"
+            app:argType="boolean" />
+        <argument
+            android:name="argListString"
+            app:argType="string[]" />
+        <argument
+            android:name="argDataList"
+            app:argType="io.github.sahalnazar.activitiestofragments.model.Data[]" />
+    </fragment>
+</navigation>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tvString"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="String"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvInt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tvInt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Int"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvBoolean"
+            app:layout_constraintStart_toStartOf="@+id/tvString"
+            app:layout_constraintTop_toBottomOf="@+id/tvString" />
+
+        <TextView
+            android:id="@+id/tvBoolean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Boolean"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvList"
+            app:layout_constraintStart_toStartOf="@+id/tvInt"
+            app:layout_constraintTop_toBottomOf="@+id/tvInt" />
+
+        <TextView
+            android:id="@+id/tvList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="List"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tvDataList"
+            app:layout_constraintStart_toStartOf="@+id/tvBoolean"
+            app:layout_constraintTop_toBottomOf="@+id/tvBoolean" />
+
+        <TextView
+            android:id="@+id/tvDataList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Data List"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvBoolean"
+            app:layout_constraintTop_toBottomOf="@+id/tvList" />
+
+
+        <TextView
+            android:id="@+id/tvReceivedString"
+            style="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Received String"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvReceivedBoolean"
+            app:layout_constraintStart_toStartOf="@+id/tvReceivedBoolean"
+            app:layout_constraintTop_toTopOf="@+id/tvString" />
+
+        <TextView
+            android:id="@+id/tvReceivedInt"
+            style="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Received Int"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvReceivedBoolean"
+            app:layout_constraintStart_toStartOf="@+id/tvReceivedBoolean"
+            app:layout_constraintTop_toTopOf="@+id/tvInt" />
+
+        <TextView
+            android:id="@+id/tvReceivedBoolean"
+            style="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="16dp"
+            android:text="Received Boolean"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvBoolean"
+            app:layout_constraintTop_toTopOf="@+id/tvBoolean" />
+
+        <TextView
+            android:id="@+id/tvReceivedList"
+            style="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Received List"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvReceivedBoolean"
+            app:layout_constraintStart_toStartOf="@+id/tvReceivedBoolean"
+            app:layout_constraintTop_toTopOf="@+id/tvList" />
+
+        <TextView
+            android:id="@+id/tvReceivedDataList"
+            style="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Received Data List"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvReceivedBoolean"
+            app:layout_constraintStart_toStartOf="@+id/tvReceivedBoolean"
+            app:layout_constraintTop_toTopOf="@+id/tvDataList" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
